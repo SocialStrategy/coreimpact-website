@@ -38,7 +38,7 @@ document.querySelectorAll('.faq-item').forEach(item => {
     if (!isOpen) {
       item.classList.add('open')
       answer.style.maxHeight = answer.scrollHeight + 'px'
-      icon.textContent = '\u2014' // em dash
+      icon.textContent = '\u2212' // minus sign
     }
   })
 })
@@ -55,10 +55,11 @@ if (form) {
     btn.style.opacity = '0.7'
 
     try {
+      const data = Object.fromEntries(new FormData(form))
       const res = await fetch(form.action, {
         method: 'POST',
-        body: new FormData(form),
-        headers: { Accept: 'application/json' },
+        body: JSON.stringify(data),
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
       })
 
       if (res.ok) {
@@ -99,7 +100,7 @@ function showFormError(form) {
   if (!err) {
     err = document.createElement('p')
     err.className = 'form-error font-sans text-sm text-red-400 mt-4'
-    err.textContent = 'Something went wrong. Please try again or email pete@coreimpact.ai directly.'
+    err.textContent = 'Something went wrong. Please try again or email hello@coreimpact.ai directly.'
     form.appendChild(err)
   }
   err.style.display = 'block'
@@ -127,16 +128,35 @@ document.querySelectorAll('.animate-on-scroll').forEach(el => {
   observer.observe(el)
 })
 
-// ---- Nav: shrink on scroll ----------------------------------
+// ---- Nav: shrink on scroll + active section highlighting ----
 const nav = document.querySelector('nav')
-let lastScroll = 0
+const navLinks = document.querySelectorAll('.nav-link')
+const sections = Array.from(document.querySelectorAll('section[id]'))
 
-window.addEventListener('scroll', () => {
-  const scrollY = window.scrollY
+function updateActiveNav() {
+  var scrollY = window.scrollY + 120
+  var current = ''
+  sections.forEach(function(section) {
+    if (section.offsetTop <= scrollY) {
+      current = section.getAttribute('id')
+    }
+  })
+  navLinks.forEach(function(link) {
+    link.classList.remove('text-black', 'border-b', 'border-ember')
+    if (link.getAttribute('href') === '#' + current) {
+      link.classList.add('text-black', 'border-b', 'border-ember')
+    }
+  })
+}
+
+window.addEventListener('scroll', function() {
+  var scrollY = window.scrollY
   if (scrollY > 80) {
     nav.style.borderBottomWidth = '1px'
   } else {
     nav.style.borderBottomWidth = '2px'
   }
-  lastScroll = scrollY
+  updateActiveNav()
 }, { passive: true })
+
+updateActiveNav()
