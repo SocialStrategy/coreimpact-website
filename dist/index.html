@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CoreImpactAI &mdash; AI Infrastructure That Actually Works</title>
+  <meta name="description" content="CoreImpactAI builds AI systems that run in production. Not strategy decks. Not proofs of concept. Real infrastructure, deployed and running." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="CoreImpactAI &mdash; Hope Is Not an Architecture." />
+  <meta property="og:description" content="We build AI systems that run in production. From first conversation to live infrastructure." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://coreimpact.ai" />
+
+  <!-- Favicon (inline SVG) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23e85d04'/%3E%3Ctext x='6' y='24' font-size='20' font-family='Georgia' font-weight='bold' fill='%23f3f2eb'%3EC%3C/text%3E%3C/svg%3E" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,400;1,700;1,900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS (CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        fontFamily: {
+          sans: ['Inter', 'system-ui', 'sans-serif'],
+          serif: ['"Playfair Display"', 'Georgia', 'serif'],
+        },
+        extend: {
+          colors: {
+            cream: '#f3f2eb',
+            ember: '#e85d04',
+            coal:  '#1a1a1a',
+            soot:  '#2a2a2a',
+          },
+        },
+      },
+    }
+  </script>
+
+  <!-- Main JS (Vite entry point — imports style.css) -->
+  <script type="module" crossorigin src="/assets/index-CGQn5ao8.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-Bel3BvnY.css">
+</head>
+
+<body class="bg-cream text-black font-sans antialiased">
+
+  <!-- Grain overlay (paper texture) -->
+  <div class="grain-overlay" aria-hidden="true"></div>
+
+  <!-- ============================================================
+       01 · NAVIGATION
+       ============================================================ -->
+  <nav class="sticky top-0 z-50 bg-cream border-b-2 border-black transition-all duration-200">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#" class="font-serif font-black text-xl tracking-tight select-none">
+        CoreImpactAI
+      </a>
+      <a
+        href="https://cal.com/coreimpactai/30min"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="bg-black text-cream px-6 py-2.5 text-xs font-sans font-semibold uppercase tracking-widest hover:bg-ember transition-colors duration-200"
+      >
+        Book a Free Call
+      </a>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       02 · HERO
+       ============================================================ -->
+  <section id="hero" class="bg-coal text-cream overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 pt-20 pb-0 lg:pt-28 xl:pt-32">
+
+      <!-- Eyebrow label -->
+      <p class="text-xs font-sans font-semibold uppercase tracking-widest text-cream/40 mb-8">
+        Vol.&nbsp;I &nbsp;&middot;&nbsp; AI Infrastructure
+      </p>
+
+      <!-- Main headline -->
+      <h1 class="font-serif font-black leading-none">
+        <span class="block text-[clamp(3rem,10vw,8.5rem)]">Hope Is Not</span>
+        <span class="block text-[clamp(3rem,10vw,8.5rem)]">an&nbsp;<em class="text-ember not-italic italic">Architecture.</em></span>
+      </h1>
+
+      <!-- Subtext + CTA -->
+      <div class="mt-10 border-t border-cream/20 pt-10 grid lg:grid-cols-2 gap-10 lg:gap-16 items-start">
+        <p class="text-lg lg:text-xl font-sans font-light text-cream/80 leading-relaxed max-w-xl">
+          Most AI consultancies hand you a strategy deck and wish you luck. We build the system, deploy it, and make sure it actually runs. From first conversation to production infrastructure.
+        </p>
+        <div class="flex flex-col items-start gap-3">
+          <a
+            href="https://cal.com/coreimpactai/30min"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-block bg-ember text-white px-8 py-4 text-sm font-sans font-semibold uppercase tracking-widest hover:bg-ember/90 transition-colors duration-200"
+          >
+            Book a Free 30-Minute Call
+          </a>
+          <p class="text-xs font-sans font-semibold uppercase tracking-widest text-cream/30">
+            Free &nbsp;&middot;&nbsp; 30 Minutes &nbsp;&middot;&nbsp; Zoom
+          </p>
+        </div>
+      </div>
+
+      <!-- Showcase: 3D visualization placeholder -->
+      <div class="showcase-frame mt-16 lg:mt-24">
+        <img
+          src="/showcase-placeholder.jpg"
+          alt="CoreImpactAI system visualization — interactive 3D view coming in Phase 2"
+          class="w-full block"
+          loading="eager"
+        />
+        <div class="scanline-overlay" aria-hidden="true"></div>
+        <div class="showcase-caption">
+          <p class="text-xs font-sans font-semibold uppercase tracking-widest text-[#4ade80]/65 mb-2">
+            Phase 2 Preview &nbsp;&middot;&nbsp; Interactive Visualization
+          </p>
+          <p class="font-serif font-bold text-xl lg:text-2xl text-cream">
+            See your AI system. Live.
+          </p>
+        </div>
+        <div class="showcase-corner-tl" aria-hidden="true"></div>
+        <div class="showcase-corner-tr" aria-hidden="true"></div>
+        <div class="showcase-corner-bl" aria-hidden="true"></div>
+        <div class="showcase-corner-br" aria-hidden="true"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       03 · PROBLEM
+       ============================================================ -->
+  <section id="problem" class="bg-cream py-24 lg:py-32">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <!-- Section header -->
+      <div class="border-t-4 border-black pt-8 mb-0">
+        <p class="text-xs font-sans font-semibold uppercase tracking-widest text-black/40 mb-5">
+          02 &nbsp;&middot;&nbsp; The Problem
+        </p>
+        <h2 class="font-serif font-black leading-none text-[clamp(2.5rem,7vw,5.5rem)] max-w-3xl mb-16">
+          AI Has a<br><em class="text-ember italic">Delivery</em> Problem.
+        </h2>
+      </div>
+
+      <!-- Three problem cards -->
+      <div class="grid md:grid-cols-3 border-t-2 border-black">
+
+        <div class="animate-on-scroll border-b-2 md:border-b-0 md:border-r-2 border-black p-8 lg:p-10">
+          <p class="font-serif font-black text-5xl lg:text-6xl text-ember leading-none mb-6">01</p>
+          <h3 class="font-serif font-bold text-2xl lg:text-3xl leading-tight mb-5">
+            "You've been sold&nbsp;a vision. Nobody built&nbsp;it."
+          </h3>
+          <p class="font-sans text-base leading-relaxed text-black/75">
+            You sat through the pitch. You signed the contract. Six months later you have a slide deck, a proof of concept that doesn't work, and a consulting bill that does.
+          </p>
+        </div>
+
+        <div class="animate-on-scroll border-b-2 md:border-b-0 md:border-r-2 border-black p-8 lg:p-10" style="animation-delay: 0.12s">
+          <p class="font-serif font-black text-5xl lg:text-6xl text-ember leading-none mb-6">02</p>
+          <h3 class="font-serif font-bold text-2xl lg:text-3xl leading-tight mb-5">
+            "Your team is using&nbsp;AI. Badly."
+          </h3>
+          <p class="font-sans text-base leading-relaxed text-black/75">
+            Someone discovered ChatGPT. Now half your staff are copy-pasting prompts and calling it automation. The other half think AI is going to take their jobs. Neither group is getting value.
+          </p>
+        </div>
+
+        <div class="animate-on-scroll p-8 lg:p-10" style="animation-delay: 0.24s">
+          <p class="font-serif font-black text-5xl lg:text-6xl text-ember leading-none mb-6">03</p>
+          <h3 class="font-serif font-bold text-2xl lg:text-3xl leading-tight mb-5">
+            "You know what you need. You can't find anyone who builds it."
+          </h3>
+          <p class="font-sans text-base leading-relaxed text-black/75">
+            You've talked to agencies, freelancers, "AI strategists." They can all describe the solution. None of them can deploy it, run it, and keep it running.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Closing line -->
+      <div class="border-t-2 border-black pt-8">
+        <p class="font-serif font-bold text-2xl lg:text-3xl leading-tight max-w-2xl">
+          We fix all three. Not with advice.&nbsp;<em class="text-ember">With infrastructure.</em>
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       04 · CASE STUDIES
+       ============================================================ -->
+  <section id="case-studies" class="bg-coal text-cream py-24 lg:py-32">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <!-- Section header -->
+      <div class="border-t-4 border-cream/20 pt-8 mb-0">
+        <p class="text-xs font-sans font-semibold uppercase tracking-widest text-cream/35 mb-5">
+          03 &nbsp;&middot;&nbsp; Case Studies
+        </p>
+        <h2 class="font-serif font-black leading-none text-[clamp(2.5rem,7vw,5.5rem)] max-w-3xl text-cream mb-16">
+          Real Systems.<br><em class="text-ember">Running Now.</em>
+        </h2>
+      </div>
+
+      <!-- Case study grid -->
+      <div>
+
+        <!-- Row 1: Two columns -->
+        <div class="grid md:grid-cols-2 border-t border-cream/15">
+
+          <!-- Case 01 -->
+          <article class="animate-on-scroll border-b md:border-b-0 md:border-r border-cream/15 p-8 lg:p-10 flex flex-col">
+            <p class="text-xs font-sans font-semibold uppercase tracking-widest text-ember mb-5">
+              Solar Energy &nbsp;&middot;&nbsp; Australia
+            </p>
+            <h3 class="font-serif font-bold text-2xl lg:text-3xl leading-tight text-cream mb-4">
+              End-to-end workflow automation for a solar installer
+            </h3>
+            <p class="font-sans text-sm leading-relaxed text-cream/55 flex-1 mb-8">
+              Automated the full pipeline from customer enquiry through to quoting, job scheduling, invoicing, and grid connection applications. AI handles CRM triage, document generation, and follow-up sequencing across five separate business systems.
+            </p>
+            <div class="border-t border-cream/15 pt-6 mt-auto">
+              <p class="text-xs font-sans font-semibold uppercase tracking-widest text-cream/35 mb-2">Key Outcome</p>
+              <p class="font-serif font-black text-5xl text-ember leading-none">15+</p>
+              <p class="font-sans text-xs uppercase tracking-wider text-cream/50 mt-1">hours / week freed from manual admin</p>
+            </div>
+          </article>
+
+          <!-- Case 02 -->
+          <article class="animate-on-scroll border-b md:border-b-0 border-cream/15 p-8 lg:p-10 flex flex-col" style="animation-delay: 0.12s">
+            <p class="text-xs font-sans font-semibold uppercase tracking-widest text-ember mb-5">
+              Asset Management &nbsp;&middot;&nbsp; Netherlands
+            </p>
+            <h3 class="font-serif font-bold text-2xl lg:text-3xl leading-tight text-cream mb-4">
+              Quarterly report analysis across 180 companies
+            </h3>
+            <p class="font-sans text-sm leading-relaxed text-cream/55 flex-1 mb-8">
+              Built a system that automatically downloads, analyses, and indexes quarterly reports from 180 portfolio companies. Full vector search across every document so analysts can query across the entire portfolio in natural language.
+            </p>
+            <div class="border-t border-cream/15 pt-6 mt-auto">
+              <p class="text-xs font-sans font-semibold uppercase tracking-widest text-cream/35 mb-2">Key Outcome</p>
+              <p class="font-serif font-black text-5xl text-ember leading-none">180+</p>
+              <p class="font-sans text-xs uppercase tracking-wider text-cream/50 mt-1">man-hours saved every quarter</p>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Case 03: Full-width feature -->
+        <article class="animate-on-scroll border-t border-cream/15 p-8 lg:p-10 lg:flex lg:gap-16 items-start">
+          <div class="lg:flex-1">
+            <p class="text-xs font-sans font-semibold uppercase tracking-widest text-ember mb-5">
+              Legal &nbsp;&middot;&nbsp; Thailand
+            </p>
+            <h3 class="font-serif font-bold text-3xl lg:text-4xl leading-tight text-cream mb-4">
+              Document review and engagement letter automation
+            </h3>
+            <p class="font-sans text-sm leading-relaxed text-cream/55 max-w-2xl">
+              Designed an AI document review system for junior staff at a Bangkok law firm. Reviews contracts and flags issues in seconds. Engagement letters, NDAs, and standard correspondence now generate automatically from intake data.
+            </p>
+          </div>
+          <div class="mt-8 lg:mt-0 flex-shrink-0 lg:w-56 border-t lg:border-t-0 lg:border-l border-cream/15 pt-6 lg:pt-0 lg:pl-12">
+            <p class="text-xs font-sans font-semibold uppercase tracking-widest text-cream/35 mb-2">Key Outcome</p>
+            <p class="font-serif font-black text-7xl lg:text-8xl text-ember leading-none">70%</p>
+            <p class="font-sans text-xs uppercase tracking-wider text-cream/50 mt-1">reduction in document review time</p>
+          </div>
+        </article>
+
+        <!-- Row 2: Two columns -->
+        <div class="grid md:grid-cols-2 border-t border-cream/15">
+
+          <!-- Case 04 -->
+          <article class="animate-on-scroll border-b md:border-b-0 md:border-r border-cream/15 p-8 lg:p-10 flex flex-col">
+            <p class="text-xs font-sans font-semibold uppercase tracking-widest text-ember mb-5">
+              Back-Office Services &nbsp;&middot;&nbsp; Indonesia
+            </p>
+            <h3 class="font-serif font-bold text-2xl lg:text-3xl leading-tight text-cream mb-4">
+              OCR receipt and document processing at scale
+            </h3>
+            <p class="font-sans text-sm leading-relaxed text-cream/55 flex-1 mb-8">
+              Built an intelligent OCR pipeline for a back-office-as-a-service company processing thousands of receipts and invoices monthly. Extracts, categorises, and reconciles financial documents with minimal human intervention.
+            </p>
+            <div class="border-t border-cream/15 pt-6 mt-auto">
+              <p class="text-xs font-sans font-semibold uppercase tracking-widest text-cream/35 mb-2">Key Outcome</p>
+              <p class="font-serif font-black text-5xl text-ember leading-none">97%+</p>
+              <p class="font-sans text-xs uppercase tracking-wider text-cream/50 mt-1">processing accuracy</p>
+            </div>
+          </article>
+
+          <!-- Case 05 -->
+          <article class="animate-on-scroll border-b md:border-b-0 border-cream/15 p-8 lg:p-10 flex flex-col" style="animation-delay: 0.12s">
+            <p class="text-xs font-sans font-semibold uppercase tracking-widest text-ember mb-5">
+              Online Communities &nbsp;&middot;&nbsp; Global
+            </p>
+            <h3 class="font-serif font-bold text-2xl lg:text-3xl leading-tight text-cream mb-4">
+              Intelligent spam and scam protection for chat platforms
+            </h3>
+            <p class="font-sans text-sm leading-relaxed text-cream/55 flex-1 mb-8">
+              Deployed AI-powered moderation bots across Discord and Telegram communities. Context-aware detection that catches sophisticated scams, phishing, and social engineering that rule-based filters miss entirely.
+            </p>
+            <div class="border-t border-cream/15 pt-6 mt-auto">
+              <p class="text-xs font-sans font-semibold uppercase tracking-widest text-cream/35 mb-2">Key Outcome</p>
+              <p class="font-serif font-black text-5xl text-ember leading-none">12&times;</p>
+              <p class="font-sans text-xs uppercase tracking-wider text-cream/50 mt-1">higher scam detection vs. keyword filters</p>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Case 06: Full-width feature -->
+        <article class="animate-on-scroll border-t border-cream/15 p-8 lg:p-10 lg:flex lg:gap-16 items-start">
+          <div class="lg:flex-1">
+            <p class="text-xs font-sans font-semibold uppercase tracking-widest text-ember mb-5">
+              SaaS &nbsp;&middot;&nbsp; UAE
+            </p>
+            <h3 class="font-serif font-bold text-3xl lg:text-4xl leading-tight text-cream mb-4">
+              Internal AI oracle for instant company knowledge
+            </h3>
+            <p class="font-sans text-sm leading-relaxed text-cream/55 max-w-2xl">
+              Built an AI assistant for a Dubai SaaS company that sits across every internal system. Any employee can DM it and get instant answers on processes, pricing, client history, policy, or technical documentation. Trained on the company's entire knowledge base and updated continuously.
+            </p>
+          </div>
+          <div class="mt-8 lg:mt-0 flex-shrink-0 lg:w-56 border-t lg:border-t-0 lg:border-l border-cream/15 pt-6 lg:pt-0 lg:pl-12">
+            <p class="text-xs font-sans font-semibold uppercase tracking-widest text-cream/35 mb-3">Key Outcome</p>
+            <p class="font-serif font-black text-4xl lg:text-5xl text-ember leading-tight">Hours</p>
+            <p class="font-serif font-black text-3xl lg:text-4xl text-cream/25 leading-none my-1">to</p>
+            <p class="font-serif font-black text-4xl lg:text-5xl text-ember leading-tight">Seconds</p>
+            <p class="font-sans text-xs uppercase tracking-wider text-cream/50 mt-2">internal response time</p>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Closing line -->
+      <div class="border-t border-cream/15 pt-8 mt-0">
+        <p class="font-serif italic text-lg lg:text-xl text-cream/50 max-w-3xl">
+          "Every business is different. Every system we build is different. These are a few that are running right now."
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       05 · HOW WE WORK
+       ============================================================ -->
+  <section id="how-we-work" class="bg-cream py-24 lg:py-32">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <!-- Section header -->
+      <div class="border-t-4 border-black pt-8 mb-0">
+        <p class="text-xs font-sans font-semibold uppercase tracking-widest text-black/40 mb-5">
+          04 &nbsp;&middot;&nbsp; How We Work
+        </p>
+        <h2 class="font-serif font-black leading-none text-[clamp(2.5rem,7vw,5.5rem)] mb-16">
+          Two Ways<br>to&nbsp;<em class="text-ember italic">Start.</em>
+        </h2>
+      </div>
+
+      <!-- Two options -->
+      <div class="grid md:grid-cols-2 border-t-2 border-black">
+
+        <!-- Option 01: Free Call -->
+        <div class="animate-on-scroll border-b-2 md:border-b-0 md:border-r-2 border-black p-8 lg:p-12">
+          <p class="text-xs font-sans font-semibold uppercase tracking-widest text-black/40 mb-4">Option 01</p>
+          <h3 class="font-serif font-black text-3xl lg:text-4xl mb-2">Free Intro Call</h3>
+          <p class="text-xs font-sans font-semibold uppercase tracking-widest text-ember mb-6">
+            Free &nbsp;&middot;&nbsp; 30 Minutes &nbsp;&middot;&nbsp; Zoom
+          </p>
+          <p class="font-sans text-base leading-relaxed text-black/75 mb-8">
+            A straight conversation about your business and where AI fits. No slides. No pitch. If AI isn't right for you, we'll say so.
+          </p>
+          <a
+            href="https://cal.com/coreimpactai/30min"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-block bg-black text-cream px-8 py-4 text-xs font-sans font-semibold uppercase tracking-widest hover:bg-ember transition-colors duration-200"
+          >
+            Book a Free Call
+          </a>
+        </div>
+
+        <!-- Option 02: Discovery Session -->
+        <div class="animate-on-scroll p-8 lg:p-12" style="animation-delay: 0.12s">
+          <p class="text-xs font-sans font-semibold uppercase tracking-widest text-black/40 mb-4">Option 02</p>
+          <h3 class="font-serif font-black text-3xl lg:text-4xl mb-2">AI Discovery Session</h3>
+          <p class="text-xs font-sans font-semibold uppercase tracking-widest text-ember mb-6">
+            $99 USD &nbsp;&middot;&nbsp; 90 Minutes &nbsp;&middot;&nbsp; Zoom
+          </p>
+          <p class="font-sans text-base leading-relaxed text-black/75 mb-6">
+            A structured deep-dive into your business. We map your workflows, identify AI opportunities, and deliver a written report within 48 hours with your top quick wins ranked by ROI.
+          </p>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-start gap-3">
+              <span class="text-ember font-bold mt-0.5 flex-shrink-0 leading-none">&mdash;</span>
+              <span class="font-sans text-sm text-black/75">Full business audit across every function</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-ember font-bold mt-0.5 flex-shrink-0 leading-none">&mdash;</span>
+              <span class="font-sans text-sm text-black/75">Your top 3 quick-win opportunities ranked by ROI</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-ember font-bold mt-0.5 flex-shrink-0 leading-none">&mdash;</span>
+              <span class="font-sans text-sm text-black/75">12+ point AI opportunity list tailored to your business</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-ember font-bold mt-0.5 flex-shrink-0 leading-none">&mdash;</span>
+              <span class="font-sans text-sm text-black/75">Written report delivered within 48 hours</span>
+            </li>
+          </ul>
+          <p class="text-xs font-sans text-black/40 uppercase tracking-wider">Available after your free intro call.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       06 · AI OPS AUDIT FORM
+       ============================================================ -->
+  <section id="audit" class="bg-coal text-cream py-24 lg:py-32">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <!-- Section header -->
+      <div class="border-t-4 border-cream/20 pt-8 mb-16">
+        <p class="text-xs font-sans font-semibold uppercase tracking-widest text-cream/35 mb-5">
+          05 &nbsp;&middot;&nbsp; AI Ops Audit
+        </p>
+        <h2 class="font-serif font-black leading-none text-[clamp(2.5rem,7vw,5.5rem)] max-w-3xl text-cream mb-6">
+          Not Ready for a Call?<br><em class="text-ember italic">Start Here.</em>
+        </h2>
+        <p class="font-sans text-lg font-light text-cream/60 max-w-2xl leading-relaxed">
+          Fill out the form. A real human &mdash; backed by some very capable AI &mdash; will review your answers and reply within 48&nbsp;hours with specific opportunities for your business.
+        </p>
+      </div>
+
+      <!-- Audit form -->
+      <form id="audit-form" action="https://formspree.io/f/placeholder" method="POST" class="max-w-3xl" novalidate>
+
+        <div class="grid sm:grid-cols-2 gap-5 mb-5">
+          <div class="form-group">
+            <label for="f-name" class="form-label">Your Name</label>
+            <input id="f-name" type="text" name="name" required placeholder="Full name" class="form-input" />
+          </div>
+          <div class="form-group">
+            <label for="f-company" class="form-label">Company Name</label>
+            <input id="f-company" type="text" name="company" required placeholder="Your company" class="form-input" />
+          </div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 gap-5 mb-5">
+          <div class="form-group">
+            <label for="f-industry" class="form-label">Industry</label>
+            <select id="f-industry" name="industry" required class="form-input form-select">
+              <option value="" disabled selected>Select industry</option>
+              <option>Construction / Trades</option>
+              <option>Hospitality / F&amp;B</option>
+              <option>Healthcare</option>
+              <option>Agriculture</option>
+              <option>Retail / E-commerce</option>
+              <option>Real Estate</option>
+              <option>Legal</option>
+              <option>Logistics / Transport</option>
+              <option>SaaS / Tech</option>
+              <option>Financial Services</option>
+              <option>Professional Services</option>
+              <option>Manufacturing</option>
+              <option>Education</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="f-size" class="form-label">Team Size</label>
+            <select id="f-size" name="team_size" required class="form-input form-select">
+              <option value="" disabled selected>Select size</option>
+              <option>Just me</option>
+              <option>2&ndash;10</option>
+              <option>11&ndash;50</option>
+              <option>51&ndash;200</option>
+              <option>200+</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group mb-5">
+          <label for="f-tools" class="form-label">What software or tools does your business rely on day-to-day?</label>
+          <textarea id="f-tools" name="tools" rows="3" placeholder="e.g. Xero, Salesforce, Google Workspace, custom CRM&hellip;" class="form-input form-textarea"></textarea>
+        </div>
+
+        <div class="form-group mb-5">
+          <label for="f-time" class="form-label">What takes the most time in your team&rsquo;s week that feels like it should be automated?</label>
+          <textarea id="f-time" name="time_sink" rows="3" class="form-input form-textarea"></textarea>
+        </div>
+
+        <div class="form-group mb-5">
+          <label for="f-ai" class="form-label">Have you tried any AI tools? What happened?</label>
+          <textarea id="f-ai" name="ai_attempts" rows="3" placeholder="e.g. ChatGPT, Zapier AI, nothing yet&hellip;" class="form-input form-textarea"></textarea>
+        </div>
+
+        <div class="form-group mb-5">
+          <label for="f-wand" class="form-label">If you could wave a magic wand and automate one thing in your business tomorrow, what would it be?</label>
+          <textarea id="f-wand" name="magic_wand" rows="3" class="form-input form-textarea"></textarea>
+        </div>
+
+        <div class="form-group mb-5">
+          <label for="f-email" class="form-label">Email Address</label>
+          <input id="f-email" type="email" name="email" required placeholder="you@company.com" class="form-input" />
+        </div>
+
+        <div class="form-group mb-10">
+          <label for="f-other" class="form-label">
+            Anything else we should know?
+            <span class="text-cream/30 normal-case tracking-normal ml-1">(Optional)</span>
+          </label>
+          <textarea id="f-other" name="other" rows="3" class="form-input form-textarea"></textarea>
+        </div>
+
+        <button
+          type="submit"
+          class="w-full sm:w-auto bg-ember text-white px-10 py-4 text-sm font-sans font-semibold uppercase tracking-widest hover:bg-ember/90 transition-colors duration-200 cursor-pointer"
+        >
+          Get Your Free Assessment
+        </button>
+
+      </form>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       07 · TEAM
+       ============================================================ -->
+  <section id="team" class="bg-cream py-24 lg:py-32">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <!-- Section header -->
+      <div class="border-t-4 border-black pt-8 mb-0">
+        <p class="text-xs font-sans font-semibold uppercase tracking-widest text-black/40 mb-5">
+          06 &nbsp;&middot;&nbsp; The Team
+        </p>
+        <h2 class="font-serif font-black leading-none text-[clamp(2.5rem,7vw,5.5rem)] mb-16">
+          We&rsquo;ve Done<br>This&nbsp;<em class="text-ember italic">Before.</em>
+        </h2>
+      </div>
+
+      <!-- Team intro copy -->
+      <div class="max-w-3xl mb-16">
+        <blockquote class="font-serif font-bold text-xl lg:text-2xl leading-relaxed mb-6 border-l-4 border-ember pl-6">
+          "We&rsquo;re founders, engineers, and operators who&rsquo;ve built and scaled businesses across fintech, SaaS, Web3, and e-commerce. We&rsquo;ve run GTM teams, closed enterprise deals, built marketing machines, and automated ourselves out of 80-hour weeks."
+        </blockquote>
+        <p class="font-sans text-base leading-relaxed text-black/70">
+          CoreImpact exists because we got tired of watching companies burn money on AI consultants who couldn&rsquo;t ship. We build the systems ourselves. We run them. And when something breaks at 2am, we fix it &mdash; because our AI infrastructure doesn&rsquo;t sleep and neither does our ops layer.
+        </p>
+      </div>
+
+      <!-- Proof-point stats -->
+      <div class="grid grid-cols-3 border-t-2 border-b-2 border-black mb-16">
+        <div class="animate-on-scroll py-8 pr-6 lg:pr-10 border-r-2 border-black">
+          <p class="font-serif font-black text-4xl lg:text-5xl text-ember leading-none">20+</p>
+          <p class="font-sans text-xs uppercase tracking-widest text-black/55 mt-3 leading-relaxed">Years combined in AI, blockchain &amp; enterprise tech</p>
+        </div>
+        <div class="animate-on-scroll py-8 px-6 lg:px-10 border-r-2 border-black" style="animation-delay: 0.12s">
+          <p class="font-serif font-black text-4xl lg:text-5xl text-ember leading-none">6+</p>
+          <p class="font-sans text-xs uppercase tracking-widest text-black/55 mt-3 leading-relaxed">Countries with live production systems</p>
+        </div>
+        <div class="animate-on-scroll py-8 pl-6 lg:pl-10" style="animation-delay: 0.24s">
+          <p class="font-serif font-black text-4xl lg:text-5xl text-ember leading-none">100%</p>
+          <p class="font-sans text-xs uppercase tracking-widest text-black/55 mt-3 leading-relaxed">Of referenced systems running in production right now</p>
+        </div>
+      </div>
+
+      <!-- Founders -->
+      <div class="grid md:grid-cols-2 border-t-2 border-black">
+
+        <!-- Pete -->
+        <div class="animate-on-scroll border-b-2 md:border-b-0 md:border-r-2 border-black p-8 lg:p-10">
+          <p class="text-xs font-sans font-semibold uppercase tracking-widest text-black/40 mb-4">Co-Founder &nbsp;&middot;&nbsp; Technical Lead</p>
+          <h3 class="font-serif font-black text-4xl lg:text-5xl mb-5">Pete</h3>
+          <p class="font-sans text-base leading-relaxed text-black/75 mb-6">
+            Systems architect and operator. Built and scaled businesses across fintech, SaaS, Web3, and e-commerce in Dubai, Bangkok, and Sydney. Leads CoreImpact&rsquo;s technical architecture and AI infrastructure. The person who ensures every system we deploy actually works in production.
+          </p>
+          <a
+            href="https://www.linkedin.com/in/dxbpete/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-2 text-xs font-sans font-semibold uppercase tracking-widest border-b-2 border-black pb-0.5 hover:border-ember hover:text-ember transition-colors duration-200"
+          >
+            LinkedIn &#8599;
+          </a>
+        </div>
+
+        <!-- Grigory -->
+        <div class="animate-on-scroll p-8 lg:p-10" style="animation-delay: 0.12s">
+          <p class="text-xs font-sans font-semibold uppercase tracking-widest text-black/40 mb-4">Co-Founder &nbsp;&middot;&nbsp; Growth</p>
+          <h3 class="font-serif font-black text-4xl lg:text-5xl mb-5">Grigory</h3>
+          <p class="font-sans text-base leading-relaxed text-black/75 mb-6">
+            Marketing strategist and growth operator. Drives CoreImpact&rsquo;s go-to-market, brand, and client acquisition. Brings deep experience in scaling digital products and building marketing machines that convert.
+          </p>
+          <a
+            href="https://www.linkedin.com/in/grigory-p-182336114/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-2 text-xs font-sans font-semibold uppercase tracking-widest border-b-2 border-black pb-0.5 hover:border-ember hover:text-ember transition-colors duration-200"
+          >
+            LinkedIn &#8599;
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Wider team -->
+      <div class="border-t-2 border-black pt-6">
+        <p class="font-sans text-sm text-black/55 max-w-2xl leading-relaxed">
+          Backed by a team of senior engineers and AI specialists who build and maintain every system we deploy. We don&rsquo;t outsource. We don&rsquo;t hand off. Our team operates the infrastructure end-to-end.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       08 · FAQ
+       ============================================================ -->
+  <section id="faq" class="bg-soot text-cream py-24 lg:py-32">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <!-- Section header -->
+      <div class="border-t-4 border-cream/20 pt-8 mb-16">
+        <p class="text-xs font-sans font-semibold uppercase tracking-widest text-cream/35 mb-5">
+          07 &nbsp;&middot;&nbsp; FAQ
+        </p>
+        <h2 class="font-serif font-black leading-none text-[clamp(2.5rem,7vw,5.5rem)] max-w-2xl text-cream">
+          Plain<br><em class="text-ember italic">Answers.</em>
+        </h2>
+      </div>
+
+      <!-- Accordion -->
+      <div class="max-w-3xl">
+
+        <div class="faq-item border-t border-cream/15">
+          <button class="faq-question w-full text-left py-6 flex items-start justify-between gap-6">
+            <span class="font-serif font-bold text-lg lg:text-xl text-cream leading-snug">Do I need to know anything about AI before the call?</span>
+            <span class="faq-icon text-2xl font-light text-ember flex-shrink-0 leading-none mt-0.5 select-none">+</span>
+          </button>
+          <div class="faq-answer" style="max-height:0">
+            <p class="font-sans text-base text-cream/65 leading-relaxed pb-6">Not a thing. If you know your business, that&rsquo;s all we need. We handle the AI part.</p>
+          </div>
+        </div>
+
+        <div class="faq-item border-t border-cream/15">
+          <button class="faq-question w-full text-left py-6 flex items-start justify-between gap-6">
+            <span class="font-serif font-bold text-lg lg:text-xl text-cream leading-snug">What if AI isn&rsquo;t right for my business?</span>
+            <span class="faq-icon text-2xl font-light text-ember flex-shrink-0 leading-none mt-0.5 select-none">+</span>
+          </button>
+          <div class="faq-answer" style="max-height:0">
+            <p class="font-sans text-base text-cream/65 leading-relaxed pb-6">We&rsquo;ll tell you. Honestly. We&rsquo;d rather save your money than sell you something that doesn&rsquo;t fit.</p>
+          </div>
+        </div>
+
+        <div class="faq-item border-t border-cream/15">
+          <button class="faq-question w-full text-left py-6 flex items-start justify-between gap-6">
+            <span class="font-serif font-bold text-lg lg:text-xl text-cream leading-snug">What&rsquo;s the difference between the free call and the Discovery Session?</span>
+            <span class="faq-icon text-2xl font-light text-ember flex-shrink-0 leading-none mt-0.5 select-none">+</span>
+          </button>
+          <div class="faq-answer" style="max-height:0">
+            <p class="font-sans text-base text-cream/65 leading-relaxed pb-6">The free 30-minute call is exploratory &mdash; you&rsquo;ll get a sense of whether AI is relevant and some initial direction. The $99 Discovery Session is a structured 90-minute deep-dive with a written report: full opportunity map, top quick wins, and a prioritized action list delivered within 48 hours.</p>
+          </div>
+        </div>
+
+        <div class="faq-item border-t border-cream/15">
+          <button class="faq-question w-full text-left py-6 flex items-start justify-between gap-6">
+            <span class="font-serif font-bold text-lg lg:text-xl text-cream leading-snug">What industries do you work with?</span>
+            <span class="faq-icon text-2xl font-light text-ember flex-shrink-0 leading-none mt-0.5 select-none">+</span>
+          </button>
+          <div class="faq-answer" style="max-height:0">
+            <p class="font-sans text-base text-cream/65 leading-relaxed pb-6">All of them. Construction, hospitality, healthcare, legal, logistics, SaaS, financial services, retail, real estate &mdash; if you run a business, we can find AI opportunities in it.</p>
+          </div>
+        </div>
+
+        <div class="faq-item border-t border-cream/15">
+          <button class="faq-question w-full text-left py-6 flex items-start justify-between gap-6">
+            <span class="font-serif font-bold text-lg lg:text-xl text-cream leading-snug">Who actually builds the AI systems?</span>
+            <span class="faq-icon text-2xl font-light text-ember flex-shrink-0 leading-none mt-0.5 select-none">+</span>
+          </button>
+          <div class="faq-answer" style="max-height:0">
+            <p class="font-sans text-base text-cream/65 leading-relaxed pb-6">We do. In-house. Every system we deploy is built by our engineering team, not outsourced. That&rsquo;s why we can guarantee they work.</p>
+          </div>
+        </div>
+
+        <div class="faq-item border-t border-cream/15">
+          <button class="faq-question w-full text-left py-6 flex items-start justify-between gap-6">
+            <span class="font-serif font-bold text-lg lg:text-xl text-cream leading-snug">Is the free call a sales pitch?</span>
+            <span class="faq-icon text-2xl font-light text-ember flex-shrink-0 leading-none mt-0.5 select-none">+</span>
+          </button>
+          <div class="faq-answer" style="max-height:0">
+            <p class="font-sans text-base text-cream/65 leading-relaxed pb-6">No. It&rsquo;s a conversation. If AI isn&rsquo;t the right move for you, we&rsquo;ll say so and you&rsquo;ll have lost nothing but 30 minutes. You&rsquo;ll leave with more clarity than you started with regardless.</p>
+          </div>
+        </div>
+
+        <div class="faq-item border-t border-b border-cream/15">
+          <button class="faq-question w-full text-left py-6 flex items-start justify-between gap-6">
+            <span class="font-serif font-bold text-lg lg:text-xl text-cream leading-snug">What happens after the call?</span>
+            <span class="faq-icon text-2xl font-light text-ember flex-shrink-0 leading-none mt-0.5 select-none">+</span>
+          </button>
+          <div class="faq-answer" style="max-height:0">
+            <p class="font-sans text-base text-cream/65 leading-relaxed pb-6">Entirely up to you. If AI looks promising, you might want a Discovery Session for the full deep-dive. If not, no follow-up spam, no pressure.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       09 · FINAL CTA
+       ============================================================ -->
+  <section id="cta" class="bg-coal text-cream py-24 lg:py-32">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="max-w-4xl">
+        <p class="text-xs font-sans font-semibold uppercase tracking-widest text-cream/35 mb-6">
+          08 &nbsp;&middot;&nbsp; Get Started
+        </p>
+        <h2 class="font-serif font-black leading-none text-[clamp(2.8rem,8vw,7rem)] mb-12">
+          One Conversation.<br><em class="text-ember italic">Total Clarity.</em>
+        </h2>
+
+        <div class="border-t border-cream/20 pt-10 grid lg:grid-cols-2 gap-10 lg:gap-16 items-start">
+
+          <ul class="space-y-5">
+            <li class="flex items-start gap-4">
+              <span class="text-ember font-bold flex-shrink-0 mt-0.5 leading-none">&mdash;</span>
+              <p class="font-sans text-base text-cream/75 leading-relaxed">We&rsquo;ll talk through your business and understand what you actually do day to day</p>
+            </li>
+            <li class="flex items-start gap-4">
+              <span class="text-ember font-bold flex-shrink-0 mt-0.5 leading-none">&mdash;</span>
+              <p class="font-sans text-base text-cream/75 leading-relaxed">You&rsquo;ll get real initial thoughts on where AI could make a difference</p>
+            </li>
+            <li class="flex items-start gap-4">
+              <span class="text-ember font-bold flex-shrink-0 mt-0.5 leading-none">&mdash;</span>
+              <p class="font-sans text-base text-cream/75 leading-relaxed">Straight-talking &mdash; if AI isn&rsquo;t right for you right now, we&rsquo;ll say so</p>
+            </li>
+            <li class="flex items-start gap-4">
+              <span class="text-ember font-bold flex-shrink-0 mt-0.5 leading-none">&mdash;</span>
+              <p class="font-sans text-base text-cream/75 leading-relaxed">Completely free &mdash; no credit card, no catch, no follow-up spam</p>
+            </li>
+          </ul>
+
+          <div>
+            <a
+              href="https://cal.com/coreimpactai/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-block w-full sm:w-auto text-center bg-ember text-white px-10 py-5 text-sm font-sans font-semibold uppercase tracking-widest hover:bg-ember/90 transition-colors duration-200"
+            >
+              Book Your Free 30-Minute Call
+            </a>
+            <p class="mt-4 text-xs font-sans font-semibold uppercase tracking-widest text-cream/30">
+              Free &nbsp;&middot;&nbsp; 30 Minutes &nbsp;&middot;&nbsp; Zoom &nbsp;&middot;&nbsp; No commitment
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       10 · FOOTER
+       ============================================================ -->
+  <footer class="bg-black text-cream/55 py-12">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 border-b border-cream/10 pb-8 mb-8">
+        <a href="#" class="font-serif font-black text-xl text-cream tracking-tight">CoreImpactAI</a>
+        <nav aria-label="Social links" class="flex items-center gap-6">
+          <a
+            href="https://x.com/CoreImpactAI"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-xs font-sans font-semibold uppercase tracking-widest hover:text-ember transition-colors duration-200"
+          >
+            X / Twitter
+          </a>
+          <a
+            href="https://www.linkedin.com/company/107151526/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-xs font-sans font-semibold uppercase tracking-widest hover:text-ember transition-colors duration-200"
+          >
+            LinkedIn
+          </a>
+          <a
+            href="mailto:pete@coreimpact.ai"
+            class="text-xs font-sans font-semibold uppercase tracking-widest hover:text-ember transition-colors duration-200"
+          >
+            Contact
+          </a>
+        </nav>
+      </div>
+
+      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+        <p class="text-xs font-sans">&copy; 2026 CoreImpact AI. All rights reserved.</p>
+        <p class="text-xs font-sans text-cream/25 italic">Built for production. Running in production.</p>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>
